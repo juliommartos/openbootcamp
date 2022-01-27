@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y tablas</title>
+    <style>
+        td {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Crea un formulario en el que haya que introducir los siguientes datos: 
+        Nombre, Apellido, e-mail, teléfono y dirección. -->
+
+    <form action="">
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="Apellido">Apellidos:</label>
+            <input type="text" id="Apellido">
+            <br>
+            <label for="email">email:</label>
+            <input type="email" id="e-mail">
+            <br>
+            <label for="Telefono">Teléfono:</label>
+            <input type="tel" id="Telefono" >
+            <br>
+            <label for="Direccion">Dirección:</label>
+            <input type="text" id="Direccion">
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <!--  Como segunda parte del ejercicio deberás crear una tabla, 
+        esta tabla tendrá 4 columnas y 4 filas, en esta tabla deberás hacer que:
+            Una de las celdas ocupe dos columnas.
+            Una de las celdas ocupe dos filas. -->
+
+    <table border="1">
+      <thead>
+          <tr>
+              <th colspan="2">1</th>
+              <th>3</th>
+              <th>4</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td rowspan="2">4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+          </tr>
+      </tfoot>
+    </table>
+</body>
+</html>
