@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+  <h2 title="Información Personal">Datos personales</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Introduce tus datos:</legend>
+            <input type="text" name="nombre" placeholder="Nombre" required pattern="[A-Za-z0-9]">
+            <p></p>
+            <input type="password" required placeholder="Contraseña">
+            <p></p>
+            <textarea cols="50" rows="3" spellcheck="true"></textarea>
+            <p></p>
+            <input type="number" placeholder="18" min="11" max="100" step="1">
+            <p></p>
+            <input type="range"  min="11" max="100" step="1">
+            <p></p>
+            <input type="date">
+            <input type="time">
+            <p></p>
+            <input type="radio" name="sex" value="mujer"> Mujer
+            <input type="radio" name="sex" value="mujer" > Hombre
+            <p></p>
+            <input type="checkbox" name="empresa" checked> Microsoft
+            <input type="checkbox" name="empresa" checked> Google
+            <p></p>
+            <select name="combo">
+                <optgroup label="Opciones básicas">
+                    <option value="1">Uno</option>
+                </optgroup>
+
+                <optgroup label="Opciones alternativas">
+                    <option value="2">Dos</option>
+                </optgroup>
+            </select>
+            <p></p>
+            <input type="submit">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
